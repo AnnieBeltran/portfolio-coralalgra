@@ -110,9 +110,26 @@ h6 {
 }
 
 /* Side Menu */
+#vertical-nav-wrapper {
+position: absolute;
+height: 40%;
+  width: 30%;
+  z-index: 10;
+  top: 13%;
+  left: 34%;
+float: left;
+margin: 70px;
+font-family: 'Hind', sans-serif;
+
+
+
+}
+
+
 #sidebar-wrapper {
   position: fixed;
-  z-index: 2;
+  float: left;
+  z-index: 20;
   right: 0;
   width: 250px;
   height: 100%;
@@ -120,12 +137,13 @@ h6 {
   transition: all 0.4s ease 0s;
   -webkit-transform: translateX(250px);
   transform: translateX(250px);
-  background: #1D809F;
+  background: rgb(255, 255, 255);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-nav {
-  position: absolute;
+  position: fixed;
+  float: left;
   top: 0;
   width: 250px;
   margin: 0;
@@ -136,13 +154,13 @@ h6 {
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: black;
   padding: 15px;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
-  color: #fff;
+  color: rgb(0, 0, 0);
   background: rgba(255, 255, 255, 0.2);
 }
 
